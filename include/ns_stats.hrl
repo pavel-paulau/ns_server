@@ -119,7 +119,23 @@
 
         %% Number of data disk read and write failures
         ep_data_read_failed,
-        ep_data_write_failed
+        ep_data_write_failed,
+
+	%% RocksDB stats
+	ep_rocksdb_kMemTableTotal,
+	ep_rocksdb_kMemTableUnFlushed,
+	ep_rocksdb_kTableReadersTotal,
+	ep_rocksdb_kCacheTotal,
+	ep_rocksdb_default_kSizeAllMemTables,
+	ep_rocksdb_seqno_kSizeAllMemTables,
+	ep_rocksdb_block_cache_data_hit,
+	ep_rocksdb_block_cache_data_miss,
+	ep_rocksdb_block_cache_index_hit,
+	ep_rocksdb_block_cache_index_miss,
+	ep_rocksdb_block_cache_filter_hit,
+	ep_rocksdb_block_cache_filter_miss,
+	ep_rocksdb_default_kTotalSstFilesSize,
+	ep_rocksdb_seqno_kTotalSstFilesSize
 ).
 
 -define(STAT_COUNTERS,
